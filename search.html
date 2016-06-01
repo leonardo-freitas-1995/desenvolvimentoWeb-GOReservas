@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>GOReservas</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div id="navbar" class="navbar-fixed scrollspy">
+    <nav  class="white">
+        <div class="nav-wrapper container">
+            <div class="container"> <a href="index.html" class="brand-logo">GOReservas</a></div>
+
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
+
+                <li>
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button' href='#' data-activates='dropdown1'>
+                        Usuario
+                        <i class="fa fa-fw fa-caret-down"></i>
+                    </a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="profile.html"><i class="fa fw-fw fa-user secondary-content"></i> Perfil</a></li>
+                        <li><a href="../index.html"><i class="fa fa-fw fa-sign-out secondary-content"></i> Sair</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<ul id="slide-out" class="side-nav fixed">
+    <li>
+        <a href="dashboard-client.html">
+            <b><i class="fa fa-fw fa-home"></i> Início</b>
+        </a>
+    </li>
+    <li>
+        <a href="calendar.html">
+            <b><i class="fa fa-fw fa-calendar"></i> Minhas Reservas</b>
+        </a>
+    </li>
+    <li class="active">
+        <a href="search.html">
+            <b><i class="fa fa-fw fa-search"></i> Procurar</b>
+        </a>
+    </li>
+</ul>
+
+<main>
+    <div class="container-fluid">
+        <h4 class="center-align">Procurar estabelecimentos</h4>
+        <div class="row">
+            <div class="col m8">
+                <div class="row">
+                    <div class="col m4 card circle">
+                        <div class="card-image">
+                            <a href="add-reserve.html"><img src="images/Pizzahut.jpg" style="height: 220px; width: 100%;"></a>
+                        </div>
+                        <div class="card-content right-align">
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                        </div>
+                    </div>
+                    <div class="col m4 card circle">
+                        <div class="card-image">
+                            <a href="add-reserve.html"><img src="images/TUCUNARENACHAPA03_criattiva.jpg" style="height: 220px; width: 100%;"></a>
+                        </div>
+                        <div class="card-content right-align">
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star-half-empty yellow-text text-darken-3"></i>
+                        </div>
+                    </div>
+                    <div class="col m4 card circle">
+                        <div class="card-image">
+                            <a href="add-reserve.html"><img src="images/enjoy-2-games-of-bowling-for-2-people-shoes-included-and-2-1-2806592-regular.jpg" style="height: 220px; width: 100%;"></a>
+                        </div>
+                        <div class="card-content right-align">
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                        </div>
+                    </div>
+                    <div class="col m4 card circle">
+                        <div class="card-image">
+                            <a href="add-reserve.html"><img src="images/11173340_685119828283242_7347391853448323937_n.jpg" style="height: 220px; width: 100%;"></a>
+                        </div>
+                        <div class="card-content right-align">
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                            <i class="fa fa-fw fa-star yellow-text text-darken-3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <hr>
+                <b>Termo de Busca</b>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" class="validate" placeholder="Pesquisar...">
+                    </div>
+                </div>
+                <hr>
+                <b>Filtros</b>
+                <p>
+                    <input type="checkbox" class="filled-in" id="filled-in-box1" checked="checked" />
+                    <label for="filled-in-box1">Restaurantes</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
+                    <label for="filled-in-box2">Entretenimento</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="filled-in" id="filled-in-box3" checked="checked" />
+                    <label for="filled-in-box3">Outros</label>
+                </p>
+                <hr>
+                <b>Opções de Busca</b>
+                <p>
+                    <input class="with-gap" name="group1" type="radio" id="test1" checked />
+                    <label for="test1">Ordernar pela maior pontuação</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="group1" type="radio" id="test2" />
+                    <label for="test2">Ordernar pela maior quantidade de reservas</label>
+                </p>
+                <hr>
+                <button class="btn blue"">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="page-footer footer red">
+
+    <div class="footer-copyright">
+        <div class="container">
+            <p>Copyright © GOReservas</p>
+        </div>
+    </div>
+</footer>
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Login</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="name" type="email" class="validate">
+                <label for="name">Email</label>
+            </div>
+
+
+            <div class="input-field col s6">
+                <input id="email" type="password" class="validate">
+                <label for="email">Senha</label>
+            </div>
+        </div><!--row-->
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Entrar</a>
+    </div>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
