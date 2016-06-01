@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>GOReservas</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div id="navbar" class="navbar-fixed scrollspy">
+    <nav  class="white">
+        <div class="nav-wrapper container">
+            <div class="container"> <a href="index.html" class="brand-logo">GOReservas</a></div>
+
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
+
+                <li>
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button' href='#' data-activates='dropdown1'>
+                        Usuario
+                        <i class="fa fa-fw fa-caret-down"></i>
+                    </a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="profile.html"><i class="fa fw-fw fa-user secondary-content"></i> Perfil</a></li>
+                        <li><a href="../index.html"><i class="fa fa-fw fa-sign-out secondary-content"></i> Sair</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<ul id="slide-out" class="side-nav fixed">
+    <li>
+        <a href="dashboard-business.html" class="truncate">
+            <b><i class="fa fa-fw fa-home"></i> Meus Estabelecimentos</b>
+        </a>
+    </li>
+    <li>
+        <a href="add-business.html" class="truncate">
+            <b><i class="fa fa-fw fa-calendar"></i> Adicionar Estabelecimento</b>
+        </a>
+    </li>
+</ul>
+
+<main>
+    <div class="container">
+        <h3>[Estabelecimento]</h3>
+        <br>
+        <h5>Reservas Pendentes</h5>
+        <hr>
+        <ul class="collection">
+            <li class="collection-item"><div>Lorem Imspum - <span class="grey-text">00/00/00 - 00:00</span><a href="#!" class="secondary-content"><i class="fa fa-fw fa-check green-text"></i><i class="fa fa-fw fa-remove red-text"></i></a></div></li>
+            <li class="collection-item"><div>Dolor Sit - <span class="grey-text">00/00/00 - 00:00</span><a href="#!" class="secondary-content"><i class="fa fa-fw fa-check green-text"></i><i class="fa fa-fw fa-remove red-text"></i></a></div></li>
+        </ul>
+        <div class="divider"></div>
+        <h5>Gerenciar Reservas</h5>
+        <hr>
+        <div class="row">
+            <div class="input-field col m5">
+                <input type="date" class="datepicker">
+                <label>Escolha o dia</label>
+            </div>
+        </div>
+        <b>Reservas disponíveis: </b>100
+        <br>
+        <b>Reservas Confirmadas: </b>20
+        <br>
+        <b>Reservas Pendentes: </b>35
+        <h5>Reservas</h5>
+        <table>
+            <thead>
+            <tr>
+                <th data-field="id">Nome</th>
+                <th data-field="name">Horário</th>
+                <th data-field="price">Compareceu</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>Alvin</td>
+                <td>18:30</td>
+                <td><i class="fa fa-fw fa-check"></i></td>
+            </tr>
+            <tr>
+                <td>Alan</td>
+                <td>19:00</td>
+                <td><i class="fa fa-fw fa-remove"></i></td>
+            </tr>
+            <tr>
+                <td>Jonathan</td>
+                <td>21:00</td>
+                <td><i class="fa fa-fw fa-check"></i></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+<footer class="page-footer footer red">
+
+    <div class="footer-copyright">
+        <div class="container">
+            <p>Copyright © GOReservas</p>
+        </div>
+    </div>
+</footer>
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Login</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="name" type="email" class="validate">
+                <label for="name">Email</label>
+            </div>
+
+
+            <div class="input-field col s6">
+                <input id="email" type="password" class="validate">
+                <label for="email">Senha</label>
+            </div>
+        </div><!--row-->
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Entrar</a>
+    </div>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

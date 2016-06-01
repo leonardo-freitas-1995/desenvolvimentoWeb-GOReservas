@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>GOReservas</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div id="navbar" class="navbar-fixed scrollspy">
+    <nav  class="white">
+        <div class="nav-wrapper container">
+            <div class="container"> <a href="index.html" class="brand-logo">GOReservas</a></div>
+
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
+
+                <li>
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-button' href='#' data-activates='dropdown1'>
+                        Usuario
+                        <i class="fa fa-fw fa-caret-down"></i>
+                    </a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="profile.html"><i class="fa fw-fw fa-user secondary-content"></i> Perfil</a></li>
+                        <li><a href="../index.html"><i class="fa fa-fw fa-sign-out secondary-content"></i> Sair</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<ul id="slide-out" class="side-nav fixed">
+    <li class="active">
+        <a href="dashboard-business.html" class="truncate">
+            <b><i class="fa fa-fw fa-home"></i> Meus Estabelecimentos</b>
+        </a>
+    </li>
+    <li>
+        <a href="add-business.html" class="truncate">
+            <b><i class="fa fa-fw fa-calendar"></i> Adicionar Estabelecimento</b>
+        </a>
+    </li>
+</ul>
+
+<main>
+    <div class="container">
+        <h3>Bem vindo, Usuário.</h3>
+        <br>
+        <h5>Meus Estabelecimentos</h5>
+        <hr>
+        <div class="row">
+            <div class="col m4 card circle">
+                <div class="card-image">
+                    <a href="business.html"><img src="images/Pizzahut.jpg" style="height: 220px; width: 100%;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="page-footer footer red">
+
+    <div class="footer-copyright">
+        <div class="container">
+            <p>Copyright © GOReservas</p>
+        </div>
+    </div>
+</footer>
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Login</h4>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="name" type="email" class="validate">
+                <label for="name">Email</label>
+            </div>
+
+
+            <div class="input-field col s6">
+                <input id="email" type="password" class="validate">
+                <label for="email">Senha</label>
+            </div>
+        </div><!--row-->
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Entrar</a>
+    </div>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
